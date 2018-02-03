@@ -51,7 +51,8 @@
             android:layout_height="wrap_content"
             android:text="+"
             android:layout_margin="16dp"
-            android:onClick="increment"/>
+            android:onClick="increment"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/tv_quantity"
@@ -64,7 +65,8 @@
             android:layout_height="wrap_content"
             android:text="-"
             android:layout_margin="16dp"
-            android:onClick="decrement"/>
+            android:onClick="decrement"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 
@@ -73,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="order"
-        android:onClick="submitOrder"/>
+        android:onClick="submitOrder"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>
