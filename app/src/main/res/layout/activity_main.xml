@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.izadalab.menupesanan.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Anda"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tv_topping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="topping"
+        android:textAllCaps="true"
+        android:layout_margin="16dp"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_whipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whipped Cream"
+        android:layout_margin="10dp"/>
+    <CheckBox
+        android:id="@+id/cb_coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:textAllCaps="true"
+        android:layout_margin="16dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="16dp"
+            android:onClick="increment"/>
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="1" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="16dp"
+            android:onClick="decrement"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="order"
+        android:onClick="submitOrder"/>
+
+</LinearLayout>

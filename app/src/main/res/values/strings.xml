@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pesan Kopiku</string>
+    <string name="order_summary_name">Pesanan Kopi</string>
+    <string name="thankyou">Terima kasih</string>
+</resources>
